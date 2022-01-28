@@ -42,9 +42,10 @@ class MyHomePage extends StatelessWidget {
                 color: Colors.blue,
               ),
               child: Text('Drawer Header'),
+              image: AssetImage('assets/Pic.jpg'),
             ),
             ListTile(
-              title: const Text('Item 1'),
+              title: const Text('Dashboard'),
               onTap: () {
                 // Update the state of the app
                 // ...
@@ -53,7 +54,43 @@ class MyHomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              title: const Text('Item 2'),
+              title: const Text('My Leads'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('My Tasks'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Notification'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Add New Customer'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Log out'),
               onTap: () {
                 // Update the state of the app
                 // ...
