@@ -5,7 +5,7 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  static const appTitle = 'Drawer Demo';
+  static const appTitle = 'Dashboard';
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +25,14 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: const Center(
-        child: Text('My Page!'),
+      appBar: AppBar(
+        title: Center(child: Text(title)),
+      ),
+      body: Row(
+        children: [
+          Column(),
+          Column()
+        ],
       ),
       drawer: Drawer(
         // Add a ListView to the drawer. This ensures the user can scroll
